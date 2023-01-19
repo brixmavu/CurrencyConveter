@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Conveter</title>
+</head>
+
+<body>
+    <section>
+        <div class="wrapper">
+            <header class="page-header">Currency Conveter</header>
+            <main class="page-body">
+                <form>
+                    <p>
+                        <label for="amount">Amount:</label>
+                        <input type="text" id="amount" name="amount">
+                    </p>
+
+                    <p>
+                        <label for="fromCurrency">From:</label>
+                        <select id="fromCurrency" name="fromCurrency">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="CAD">CAD</option>
+                            <option value="JPY">JPY</option>
+                        </select>
+
+                        <label for="toCurrency">To:</label>
+                        <select id="toCurrency" name="toCurrency">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="CAD">CAD</option>
+                            <option value="JPY">JPY</option>
+                        </select>
+                    </p>
+                    <p><button type="button" id="convertButton">Convert</button></p>
+
+                    <label for="convertedAmount">Converted Amount:</label>
+                    <p id="convertedAmount"></p>
+                </form>
+            </main>
+            <footer class="page-footer">&#169; 2023</footer>
+        </div>
+    </section>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
