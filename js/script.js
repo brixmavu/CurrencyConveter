@@ -11,7 +11,7 @@ function convertCurrency(amount, fromCurrency, toCurrency) {
 		return;
 	}
 
-	fetch(`https://openexchangerates.org/api/latest.json?app_id=YOUR_APP_ID`)
+	fetch(`https://openexchangerates.org/api/latest.json?app_id=1320859a61434750b40dad168582b8ac`)
 		.then(response => response.json())
 		.then(data => {
 			if(!data.hasOwnProperty('rates') || !data.rates.hasOwnProperty(toCurrency) || !data.rates.hasOwnProperty(fromCurrency)){
