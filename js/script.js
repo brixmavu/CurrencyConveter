@@ -4,7 +4,7 @@ function convertCurrency(amount, fromCurrency, toCurrency) {
 		return;
 	}
 
-	const supportedCurrencies = ["USD", "EUR", "GBP", "CAD", "JPY"];
+	const supportedCurrencies = ["USD", "EUR", "GBP", "CAD", "JPY", "ZAR", "ZMW"];
 
 	if (!supportedCurrencies.includes(fromCurrency) || !supportedCurrencies.includes(toCurrency)) {
 		alert("Please select a valid currency.");
